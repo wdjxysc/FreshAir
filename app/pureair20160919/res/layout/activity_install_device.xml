@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安装设备" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <Button android:textColor="@android:color/white" android:id="@id/scanBtn" android:background="@drawable/button_bg_gray_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="扫描设备条形码" style="?android:attr/borderlessButtonStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/addDetectDevice" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备编码：" />
+            <EditText android:layout_gravity="center" android:id="@id/snEditText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="20011609000001" android:layout_weight="1.0" />
+            <Button android:id="@id/snScanBtn" android:background="@mipmap/qr_small" android:layout_width="35.0dip" android:layout_height="35.0dip" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+            <TextView android:layout_gravity="center" android:id="@id/snTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sn123456789" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KEY：" />
+            <EditText android:layout_gravity="center" android:id="@id/keyEditText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="key20011609000001" android:layout_weight="1.0" />
+            <Button android:id="@id/keyScanBtn" android:background="@mipmap/qr_small" android:layout_width="35.0dip" android:layout_height="35.0dip" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+            <TextView android:layout_gravity="center" android:id="@id/keyTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="key123456789" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备类型：" />
+            <TextView android:layout_gravity="center" android:id="@id/typeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="检测设备" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="地区" android:layout_weight="2.0" />
+            <Spinner android:layout_gravity="center" android:id="@id/provinceSpinner" android:background="@drawable/spinner_bg_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="3.0" />
+            <Spinner android:layout_gravity="center" android:id="@id/citySpinner" android:background="@drawable/spinner_bg_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="3.0" />
+            <Spinner android:layout_gravity="center" android:id="@id/areaSpinner" android:background="@drawable/spinner_bg_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="3.0" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="街道小区" />
+            <Spinner android:layout_gravity="center" android:id="@id/streetSpinner" android:background="@drawable/spinner_bg_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安装位置" />
+            <EditText android:textSize="15.0sp" android:id="@id/addressEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <Button android:textColor="@android:color/white" android:id="@id/getNameBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="生成设备名称" style="?android:attr/borderlessButtonStyle" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备名称" />
+        <EditText android:textSize="15.0sp" android:id="@id/deviceNameEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@android:color/white" android:layout_gravity="top" android:id="@id/submitBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="确认安装该设备" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

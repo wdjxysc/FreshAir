@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Message" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/listViewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/addBtn" android:layout_below="@id/scrollView">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

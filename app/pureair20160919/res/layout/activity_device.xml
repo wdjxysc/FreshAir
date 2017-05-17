@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/base_color_gray_blue_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备页" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <ImageButton android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/setting_1" android:scaleType="centerCrop" android:layout_centerVertical="true" android:onClick="startDeviceSetting" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <TextView android:textColor="@android:color/white" android:id="@id/deviceNameTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="甲醛检测仪1" android:layout_weight="1.0" />
+        <TextView android:textColor="@android:color/white" android:id="@id/timeTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2016-06-20 9:00" android:layout_weight="1.0" android:textAlignment="3" />
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/messageBtn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="消息" android:layout_weight="1.0" />
+        <Button android:id="@id/aboutBtn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="关于" android:layout_weight="1.0" />
+        <Button android:id="@id/installDeviceBtn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="安装" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/pm25DataLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/now_data" />
+            <include android:id="@id/pm10DataLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/now_data" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/hchoDataLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/now_data" />
+            <include android:id="@id/tvocDataLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/now_data" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

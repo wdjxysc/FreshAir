@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报修详情" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/department" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="部门名称：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/departmentTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监控部门" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/user" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报修人：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/reporterTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张三" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/contact" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系方式：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/reporterPhoneTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13956201206" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/date_1" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报修日期：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/reportDateTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2016-06-30" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/device_id" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备编号：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/snTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13956201206" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/device_ic" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备名称：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/deviceNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="除霾1号" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/date_1" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安装日期：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/installDateTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2016-06-30" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/intime" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保修期内：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/underWarrantyTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="是" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/road" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="街道：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/streetTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文慧园" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/location" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安装位置：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/locationTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="灯杆110号" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/face_bad_1" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="损坏零件：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/badPartsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="负离子发生器（A2）" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/face_bad_1" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="损坏原因：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/reasonTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="磨损" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/level" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="故障等级：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/faultLevelTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一级" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/detail" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="故障描述：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/faultDescriptionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A3负离子发生器报警，无法正常工作，检测发现设备已经停止正常运行。" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/audio" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建议维修方式：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/adviceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更换离子发生器" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/contact" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建议维修人：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/workmanTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="王大锤" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/department" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="维修人联系方式：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/workmanPhoneTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="15625365269" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/repairDetailLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/setting" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理方式：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/repairMethodTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更换负离子发生器" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/setting" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理结果：" android:layout_marginStart="5.0dip" />
+                    <TextView android:layout_gravity="center" android:id="@id/repairResultTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备正常运转" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/writeRepairReportLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/setting" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理方式：" android:layout_marginStart="5.0dip" />
+                    <RadioGroup android:orientation="horizontal" android:id="@id/repairMethodRadioGroup" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:id="@id/radioBtn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="普通维修" />
+                        <RadioButton android:id="@id/radioBtn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更换设备" />
+                    </RadioGroup>
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:id="@id/newDeviceLayout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/setting" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新设备ID：" android:layout_marginStart="5.0dip" />
+                    <EditText android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/newDeviceEditText" android:background="@drawable/edit_text_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="新设备编码" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/repairMethodLayout" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/setting" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理方法：" android:layout_marginStart="5.0dip" />
+                    <EditText android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/repairMethodEditText" android:background="@drawable/edit_text_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="填写维修方法" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/setting" android:scaleType="fitCenter" />
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理结果：" android:layout_marginStart="5.0dip" />
+                    <EditText android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/repairResultEditText" android:background="@drawable/edit_text_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="填写维修结果" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <Button android:textColor="@android:color/white" android:id="@id/commitBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="50.0dip" android:text="提交" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

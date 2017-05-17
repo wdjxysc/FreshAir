@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/overviewLayout" android:layout_width="fill_parent" android:layout_height="180.0dip">
+            <ImageView android:id="@id/bgImageView1" android:background="#ff55aa22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/main_img" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/titleBarLayout" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <LinearLayout android:id="@id/locationLayout" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_location" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/cityTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京市" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+                <ImageView android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_add" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/titleBarLayout" android:layout_centerHorizontal="true">
+            <TextView android:textSize="35.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/mainDataTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_marginStart="5.0dip">
+                <TextView android:textSize="23.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/qltyTextView" android:background="@drawable/qlty_style_top_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="优" android:maxLines="1" android:textAlignment="4" />
+                <TextView android:textSize="8.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:background="@drawable/qlty_style_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="PM2.5" android:textAlignment="4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignBottom="@id/overviewLayout" android:alpha="0.2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignBottom="@id/overviewLayout">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tmpTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="18℃" android:textAlignment="4" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="温度" android:textAlignment="4" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/humTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="50%" android:textAlignment="4" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="湿度" android:textAlignment="4" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/pm25TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="23" android:textAlignment="4" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="PM2.5" android:textAlignment="4" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/vocTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.02" android:textAlignment="4" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VOC" android:textAlignment="4" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/hchoTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.08" android:textAlignment="4" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="甲醛" android:textAlignment="4" />
+            </LinearLayout>
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/scrollView" android:background="@mipmap/bedroom_4" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_below="@id/overviewLayout">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="主卧" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="PM2.5  23  优" android:layout_marginStart="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="湿度  50%" android:layout_marginStart="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="VOC  0.01" android:layout_marginStart="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="甲醛  0.05" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:id="@id/listViewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/addBtn" android:layout_below="@id/scrollView">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/id_swipe_ly" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+        <Button android:textColor="#ffffffff" android:id="@id/addBtn" android:background="@drawable/button_bg_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="+" android:layout_alignParentBottom="true" style="?android:attr/borderlessButtonStyle" />
+        <Button android:id="@id/bottom" android:background="#ff990099" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_alignTop="@id/listViewLayout" android:layout_marginEnd="10.0dip" android:layout_alignEnd="@id/listViewLayout" />
+        <Button android:id="@id/above" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_alignBottom="@id/scrollView" android:layout_alignEnd="@id/listViewLayout" />
+        <Button android:textSize="25.0sp" android:textColor="@android:color/white" android:id="@id/newAddBtn" android:background="@drawable/button_bg_round_green" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="+" android:layout_alignBottom="@id/bottom" android:layout_alignEnd="@id/bottom" />
+    </RelativeLayout>
+</FrameLayout>

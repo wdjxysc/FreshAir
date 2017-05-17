@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rthc.freshair.activity.DataTvocActivity"
+    android:background="@color/base_color_gray_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/base_color_gray_blue">
+        <ImageButton
+            android:onClick="back"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/arrow_left"/>
+        <com.rthc.freshair.view.FZCustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TVOC"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_color_green"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+    <com.rthc.freshair.widget.RcLineChart
+        android:layout_marginTop="25dp"
+        android:id="@+id/rcLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginEnd="20dp"
+            android:id="@+id/last24HourBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="过去24小时"/>
+
+        <Button
+            android:id="@+id/last1HourBtn"
+            android:layout_toStartOf="@id/last24HourBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:textColor="@android:color/white"
+            android:background="@color/base_color_gray_blue_dark"
+            android:text="过去1小时"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/reference_tvoc"/>
+
+</LinearLayout>

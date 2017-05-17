@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运行异常提醒" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/settings_warning" android:scaleType="fitCenter" />
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="异常告警" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
+        <CheckBox android:layout_gravity="center" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

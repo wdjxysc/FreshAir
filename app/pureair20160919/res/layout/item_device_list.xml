@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/deviceImageView" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/device_pic" android:layout_marginStart="10.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/titleTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="检测设备" android:maxLines="1" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/gray_text" android:layout_gravity="center" android:id="@id/snTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="20011609000002" android:maxLines="1" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/isOnlineImageView" android:layout_width="25.0dip" android:layout_height="50.0dip" android:src="@mipmap/wifi_4" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="right" android:layout_gravity="center" android:id="@id/isOnlineTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="在线" android:maxLines="1" android:layout_weight="1.0" android:paddingEnd="10.0dip" />
+    <ImageView android:layout_gravity="center" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/arrow_blue_right" android:scaleType="centerInside" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

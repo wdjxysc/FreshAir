@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/deviceImageView" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_launcher" android:layout_marginStart="10.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" android:maxLines="1" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="10.0sp" android:id="@id/detailTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天天气非常好" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_launcher" />
+</LinearLayout>

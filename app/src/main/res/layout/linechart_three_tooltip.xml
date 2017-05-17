@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="12:25:12"
+            android:background="#2e6b97">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text="PM2.5"
+                android:background="#f85e06">
+            </TextView>
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="77 轻度污染"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#5398c1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

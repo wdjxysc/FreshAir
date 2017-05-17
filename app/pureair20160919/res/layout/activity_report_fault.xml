@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报修" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0dip" android:gravity="top" android:id="@id/faultEditText" android:background="@drawable/edit_text_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:hint="填写问题描述" />
+        <Button android:textColor="@android:color/white" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="提交报修" android:onClick="commit" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

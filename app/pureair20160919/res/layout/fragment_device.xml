@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备" android:layout_centerInParent="true" />
+            <View android:background="@color/main_color_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            <ImageButton android:id="@id/addDeviceBtn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_add" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        </RelativeLayout>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/id_swipe_ly" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

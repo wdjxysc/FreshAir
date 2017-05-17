@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="50.0dip" android:src="@mipmap/logo" />
+        <LinearLayout android:background="@drawable/edit_text_bg" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/userIc" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/user_gray" android:layout_marginStart="5.0dip" />
+            <EditText android:textColorHint="#ff999999" android:id="@id/phoneEditText" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/login_username_hint" android:maxLines="1" android:inputType="phone" android:textCursorDrawable="@drawable/cursor" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/edit_text_bg" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/lockIc" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/lock_gray" android:layout_marginStart="5.0dip" />
+            <EditText android:textColorHint="#ff999999" android:id="@id/pwdEditText" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/password" android:maxLines="1" android:inputType="textPassword" android:textCursorDrawable="@drawable/cursor" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/checkLayout" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/checkImageView" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/checked" android:layout_centerVertical="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="记住密码" android:layout_toRightOf="@id/checkImageView" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" />
+        </RelativeLayout>
+        <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/loginBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:text="@string/login" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textColor="@color/base_color_gray_blue" android:id="@id/registerTextView" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_new_user" android:layout_alignParentStart="true" />
+            <TextView android:textColorLink="#ffff00ff" android:id="@id/forgetTextView" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forget_pwd" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+            <ImageButton android:id="@id/weChatBtn" android:background="#ff55ff55" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <ImageButton android:id="@id/qqBtn" android:background="#ffff5555" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <ImageButton android:id="@id/weiboBtn" android:background="#ff5555ff" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_svprogresshuddefault" android:padding="@dimen/padding_svprogresshuddefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/size_minwidth_svprogresshuddefault">
+        <ImageView android:id="@id/ivBigLoading" android:visibility="gone" android:layout_width="@dimen/size_image_bigloading" android:layout_height="@dimen/size_image_bigloading" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/ivSmallLoading" android:visibility="gone" android:layout_width="@dimen/size_image_smallloading" android:layout_height="@dimen/size_image_smallloading" android:scaleType="centerInside" />
+        <com.rthc.freshair.widget.svprogresshud.SVCircleProgressBar android:id="@id/circleProgressBar" android:visibility="gone" android:layout_width="@dimen/size_image_smallloading" android:layout_height="@dimen/size_image_smallloading" app:roundColor="@color/roundColor_svprogresshuddefault" app:roundProgressColor="@color/roundProgressColor_svprogresshuddefault" app:roundWidth="2.0dip" />
+        <TextView android:textSize="@dimen/textSize_svprogresshuddefault_msg" android:textColor="@color/textColor_svprogresshuddefault_msg" android:gravity="center" android:id="@id/tvMsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margintop_svprogresshuddefault_msg" />
+    </LinearLayout>
+</LinearLayout>

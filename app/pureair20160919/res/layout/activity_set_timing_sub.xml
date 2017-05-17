@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置1" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:onClick="turnOnTime" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/settings_clock" android:scaleType="fitCenter" />
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="开机时间" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
+        <TextView android:layout_gravity="center" android:id="@id/turnOnTimeTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="08:00:00" android:layout_weight="1.0" android:textAlignment="6" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:onClick="turnOffTime" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/settings_clock" android:scaleType="fitCenter" />
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="关机时间" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
+        <TextView android:layout_gravity="center" android:id="@id/turnOffTimeTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="08:00:00" android:layout_weight="1.0" android:textAlignment="6" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/commitBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="20.0dip" android:layout_marginTop="20.0dip" android:text="确定" android:onClick="setTime" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+</LinearLayout>

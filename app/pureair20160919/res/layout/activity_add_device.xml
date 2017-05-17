@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加新设备" android:layout_centerInParent="true" />
+        <View android:background="@color/main_color_green" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <EditText android:textSize="15.0sp" android:textColorHint="#ff999999" android:layout_gravity="center" android:id="@id/snEditText" android:background="@drawable/edit_text_bg" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="扫码输入要添加的设备号(SN)" android:maxLines="1" android:layout_weight="1.0" android:textCursorDrawable="@drawable/cursor" />
+        <ImageButton android:id="@id/snBtn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/qr_small" android:onClick="startScanQrCode" android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <EditText android:textSize="15.0sp" android:textColorHint="#ff999999" android:layout_gravity="center" android:id="@id/keyEditText" android:background="@drawable/edit_text_bg" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="扫码输入要添加的设备号(KEY)" android:maxLines="1" android:layout_weight="1.0" android:textCursorDrawable="@drawable/cursor" />
+        <ImageButton android:id="@id/keyBtn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/qr_small" android:onClick="startScanQrCode" android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="50.0dip" android:src="@mipmap/qr_large" />
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="扫二维码录入" />
+    <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/commitBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="20.0dip" android:layout_marginTop="20.0dip" android:text="添加设备" android:onClick="addDevice" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/base_color_gray_blue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/arrow_left" android:onClick="back" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        <com.rthc.freshair.view.FZCustomTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset_pwd" android:layout_centerInParent="true" />
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="30.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip" android:text="找回密码" />
+        <LinearLayout android:background="@drawable/edit_text_bg" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/userIc" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/user_gray" android:layout_marginStart="5.0dip" />
+            <EditText android:textColorHint="#ff999999" android:id="@id/phoneEditText" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/login_username_hint" android:maxLines="1" android:inputType="phone" android:textCursorDrawable="@drawable/cursor" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip">
+            <LinearLayout android:background="@drawable/edit_text_bg" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/mailIc" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/mail_gray" android:layout_marginStart="5.0dip" />
+                <EditText android:textColorHint="#ff999999" android:layout_gravity="center" android:id="@id/checkCodeEditText" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/check_code" android:maxLines="1" android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/getCheckCodeBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="获取验证码" android:onClick="getCheckCodeBtnOnClick" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/nextBtn" android:background="@drawable/button_bg_gray_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="80.0dip" android:text="@string/next_step" android:onClick="nextBtnOnClick" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

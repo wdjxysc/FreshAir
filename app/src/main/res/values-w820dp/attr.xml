@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MainNavigateTabBar">
+        <attr name="navigateTabTextColor" format="color|reference"/>
+        <attr name="navigateTabSelectedTextColor" format="color|reference"/>
+        <attr name="containerId" format="integer|reference"/>
+        <attr name="navigateTabTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ChartAttrs">
+
+        <attr name="chart_axisThickness" format="dimension"/>
+        <attr name="chart_axisColor" format="reference|color"/>
+        <attr name="chart_axisBorderSpacing" format="dimension"/>
+        <attr name="chart_axisTopSpacing" format="dimension"/>
+
+        <attr name="chart_labels" format="boolean"/>
+        <attr name="chart_labelColor" format = "reference|color"/>
+        <attr name="chart_fontSize" format = "dimension"/>
+        <attr name="chart_typeface" format="string"/>
+
+        <attr name="chart_shadowColor" format="reference|color"/>
+        <attr name="chart_shadowDx" format = "dimension"/>
+        <attr name="chart_shadowDy" format = "dimension"/>
+        <attr name="chart_shadowRadius" format = "dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="BarChartAttrs">
+        <attr name="chart_barSpacing" format="dimension"/>
+        <attr name="chart_setSpacing" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SVCircleProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+</resources>
